@@ -1,10 +1,14 @@
-import { readFileSync, writeFileSync } from "fs";
+import { readFileSync, writeFileSync, existsSync } from "fs";
 import { decode } from "iconv-lite";
 
 const CSV_DELIMITER = '|';
 const CSV_NEWLINE = '\n';
 
 type ExamLevel = "A" | "B" | "C"
+
+const missingPictureLabels: {[key in string]: string} = {
+    LK0938: 'LK0938.jpg'
+}
 
 interface Item {
     serial: string,
@@ -125,13 +129,22 @@ function toCsv(suite: Suite): string {
         return branches.map((branch, index) => `[${optionIndexLetter(index)}]${branch}`);
     }
 
+    function getImageHtml(pictureFile?: string): string {
+        if (pictureFile) {
+            return `<img src='${pictureFile}'/>`
+        }
+        else {
+            return ''
+        }
+    }
+
     const lines = [];
     for (const item of suite.items) {
         const segments = [
             item.serial,
             item.question,
             optionIndexLetter(item.correctBranchIndex),
-            item.picture,
+            getImageHtml(item.picture),
             ...prependOption(item.branches)
         ]
         lines.push(
@@ -142,17 +155,39 @@ function toCsv(suite: Suite): string {
 
 }
 
+// For example, as of Feb 2020, LK0938 has an image but the `[P]` field is empty
+function fixMissingPictureLabels(suite: Suite): void {
+    for (const item of suite.items) {
+        if (!item.picture) {
+            const possiblePath = `data/images/${item.serial}.jpg`
+            if (existsSync(possiblePath)) {
+                item.picture = `${item.serial}.jpg`
+                console.warn(`Fixing item ${item.serial} missing link to picture`)
+            }
+        }
+    }
+}
+
 function generate(level: ExamLevel): void {
+    console.info(`\nTransforming for level ${level}`)
     const fileContent = loadFile(level);
     const suite = {
         level,
         items: parse(fileContent),
     };
-    writeFileSync('generated/' + level + '.json', JSON.stringify(suite, null, 4));
+    fixMissingPictureLabels(suite);
 
+    const jsonPath = 'generated/' + level + '.json';
+    console.info(`Exporting JSON to ${jsonPath}`)
+    writeFileSync(jsonPath, JSON.stringify(suite, null, 4));
+
+    const csvPath = 'generated/' + level + '.csv';
     shuffleBranches(suite);
     const csvContent = toCsv(suite);
+    console.info(`Exporting CSV to ${csvPath}`)
     writeFileSync('generated/' + level + '.csv', csvContent);
+
+    console.info(`Done.`)
 }
 
 function main() {
