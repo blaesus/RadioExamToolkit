@@ -1,0 +1,16 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "radio.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/iconv-lite": "0.0.1",
+    "@types/node": "^13.7.0",
+    "iconv-lite": "^0.5.1"
+  }
+}
