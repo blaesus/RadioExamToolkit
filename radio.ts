@@ -148,11 +148,11 @@ function generate(level: ExamLevel): void {
         level,
         items: parse(fileContent),
     };
+    writeFileSync('generated/' + level + '.json', JSON.stringify(suite, null, 4));
+
     shuffleBranches(suite);
     const csvContent = toCsv(suite);
-    console.info(cs)
     writeFileSync('generated/' + level + '.csv', csvContent);
-    writeFileSync('generated/' + level + '.json', JSON.stringify(suite, null, 4));
 }
 
 function main() {
