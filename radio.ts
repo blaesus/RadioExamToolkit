@@ -30,7 +30,7 @@ function loadFile(level: ExamLevel): string {
     return text;
 }
 
-function getDefaultQa(): Item {
+function getDefaultItem(): Item {
     return {
         serial: '',
         question: '',
@@ -59,7 +59,7 @@ function parse(content: string): Item[] {
 
     const items: Item[] = [];
 
-    let item = getDefaultQa();
+    let item = getDefaultItem();
 
     for (const line of lines) {
         const regex = /\[(\w)](.*)/;
@@ -70,10 +70,7 @@ function parse(content: string): Item[] {
         const marker = match[1];
         const body = match[2];
         if (marker === 'I') {
-            if (item.serial) {
-                items.push(item);
-            }
-            item = getDefaultQa();
+            item = getDefaultItem();
         }
 
         switch (marker) {
@@ -87,12 +84,14 @@ function parse(content: string): Item[] {
             }
             case 'P': {
                 item.picture = body;
+                items.push(item);
                 break;
             }
             default: {
                 item.branches.push(body);
             }
         }
+
     }
 
     return items
