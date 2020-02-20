@@ -12,8 +12,12 @@ Parse radio exam question pools of China and the United States and generate JSON
 
 ## 2. FCC Amateur Radio Exam
 
-Three levels are handled:
-- Technical (aka element 2), based on 
+Three levels are covered:
+- Technical (i.e. element 2), version 2018-2022;
+- General (i.e. element 3), version 2019-2013;
+- Amateur Extra (i.e. element 4), version July 2020-2024.
+
+Minor changes are made to the text to make parsing successful. Premables were removed and tildes that should follow every question are added if missing. Questions and branches are not touched, obviously. 
 
 ## Development
 ```bash
@@ -22,7 +26,9 @@ npm install
 
 Then edit `radio.ts`.
 
-## 本软件（radio.ts）授权
+Compile with `tsc` (not included in this package) and run with `node radio`.
+
+## License
 MIT
 
 
