@@ -1,6 +1,7 @@
 {
-    "level": "CN-A",
-    "randomSeed": 67,
+    "level": "A",
+    "version": "v171031",
+    "randomSeed": 65,
     "items": [
         {
             "serial": "LK0001",

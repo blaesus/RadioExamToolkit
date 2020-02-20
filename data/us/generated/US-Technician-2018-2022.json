@@ -1,6 +1,7 @@
 {
-    "level": "US-Technician",
-    "randomSeed": 85,
+    "level": "Technician",
+    "version": "2018-2022",
+    "randomSeed": 84,
     "items": [
         {
             "serial": "T1A01",

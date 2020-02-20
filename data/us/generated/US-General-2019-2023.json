@@ -1,6 +1,7 @@
 {
-    "level": "US-General",
-    "randomSeed": 85,
+    "level": "General",
+    "version": "2019-2023",
+    "randomSeed": 71,
     "items": [
         {
             "serial": "G1A01",

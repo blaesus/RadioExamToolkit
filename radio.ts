@@ -15,51 +15,58 @@ interface SourceFileInfo {
     regionRoot: string,
     filename: string,
     encoding: string,
-    pictureExt: string | null
+    pictureExt: string | null,
+    version: string,
 }
 
 const sourceFileInfoList: SourceFileInfo[] = [
     {
-        level: "CN-A",
+        level: "A",
         regionRoot: "cn",
-        filename: "radioa.txt",
+        filename: "a2017.txt",
         encoding: "gbk",
         pictureExt: null,
+        version: "v171031",
     },
     {
-        level: "CN-B",
+        level: "B",
         regionRoot: "cn",
-        filename: "radiob.txt",
+        filename: "b2017.txt",
         encoding: "gbk",
         pictureExt: null,
+        version: "v171031",
     },
     {
-        level: "CN-C",
+        level: "C",
         regionRoot: "cn",
-        filename: "radioc.txt",
+        filename: "c2017.txt",
         encoding: "gbk",
         pictureExt: null,
+        version: "v171031",
     },
     {
-        level: "US-Technician",
+        level: "Technician",
         regionRoot: "us",
-        filename: "radiot.txt",
+        filename: "t2018.txt",
         encoding: "utf-8",
         pictureExt: "jpg",
+        version: "2018-2022",
     },
     {
-        level: "US-General",
+        level: "General",
         regionRoot: "us",
-        filename: "radiog.txt",
+        filename: "g2019.txt",
         encoding: "utf-8",
         pictureExt: "jpg",
+        version: "2019-2023",
     },
     {
-        level: "US-Extra",
+        level: "Extra",
         regionRoot: "us",
-        filename: "radioe.txt",
+        filename: "e2020.txt",
         encoding: "utf-8",
         pictureExt: "png",
+        version: "2020-2024",
     },
 ];
 
@@ -75,6 +82,7 @@ interface Item {
 
 interface Suite {
     level: string,
+    version: string,
     randomSeed: number,
     items: Item[],
 }
@@ -292,22 +300,25 @@ function fixMissingPictureLabels(suite: Suite): void {
 }
 
 function transform(sourceInfo: SourceFileInfo): void {
-    const { level, regionRoot } = sourceInfo;
-    console.info(`\nTransforming for level ${level}`)
+    const { level, regionRoot, version } = sourceInfo;
+    console.info(`\nTransforming for level ${level} of ${regionRoot}`)
     const fileContent = loadSource(sourceInfo);
     const seed = level.charCodeAt(0) + SEED_DELTA;
     const suite: Suite = {
         level,
+        version: sourceInfo.version,
         randomSeed: seed,
         items: parse(fileContent, regionRoot),
     };
     fixMissingPictureLabels(suite);
 
-    const jsonPath = join(sourceRoot, regionRoot, generatedFileSubpath, level + '.json');
+    const outputBasename = `${regionRoot.toUpperCase()}-${level}-${version}`
+
+    const jsonPath = join(sourceRoot, regionRoot, generatedFileSubpath, outputBasename + '.json');
     console.info(`Exporting JSON to ${jsonPath}`)
     writeFileSync(jsonPath, JSON.stringify(suite, null, 4));
 
-    const csvPath = join(sourceRoot, regionRoot, generatedFileSubpath, level + '.csv');
+    const csvPath = join(sourceRoot, regionRoot, generatedFileSubpath, outputBasename + '.csv');
     const prng = getPrng(suite.randomSeed);
     shuffleBranches(suite, () => prng.get());
     const csvContent = toCsv(suite, sourceInfo.pictureExt);

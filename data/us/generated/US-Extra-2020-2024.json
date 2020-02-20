@@ -1,6 +1,7 @@
 {
-    "level": "US-Extra",
-    "randomSeed": 85,
+    "level": "Extra",
+    "version": "2020-2024",
+    "randomSeed": 69,
     "items": [
         {
             "serial": "E1A01",
