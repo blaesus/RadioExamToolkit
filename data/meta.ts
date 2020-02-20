@@ -5,6 +5,11 @@ export interface SourceFileInfo {
     encoding: string,
     pictureExt: string | null,
     version: string,
+    nature:
+        "complete" // All questions that could occur are included
+        | "mock",
+    origin: "official",
+    originPage: string,
 }
 
 export const sourceFileInfoList: SourceFileInfo[] = [
@@ -15,6 +20,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "gbk",
         pictureExt: null,
         version: "v171031",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.crac.org.cn/News/Detail?ID=1862",
     },
     {
         level: "B",
@@ -23,6 +31,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "gbk",
         pictureExt: null,
         version: "v171031",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.crac.org.cn/News/Detail?ID=1862",
     },
     {
         level: "C",
@@ -31,6 +42,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "gbk",
         pictureExt: null,
         version: "v171031",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.crac.org.cn/News/Detail?ID=1862",
     },
     {
         level: "Technician",
@@ -39,6 +53,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "utf-8",
         pictureExt: "jpg",
         version: "2018-2022",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.ncvec.org/page.php?id=369"
     },
     {
         level: "General",
@@ -47,6 +64,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "utf-8",
         pictureExt: "jpg",
         version: "2019-2023",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.ncvec.org/page.php?id=364",
     },
     {
         level: "Extra",
@@ -55,6 +75,9 @@ export const sourceFileInfoList: SourceFileInfo[] = [
         encoding: "utf-8",
         pictureExt: "png",
         version: "2020-2024",
+        nature: "complete",
+        origin: "official",
+        originPage: "http://www.ncvec.org/page.php?id=356",
     },
 ];
 
