@@ -1,14 +1,68 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
+import { join } from "path";
 import { decode } from "iconv-lite";
+
+const sourceRoot = `data`;
+const generatedFileSubpath = `generated`;
 
 const SEED_DELTA = 0;
 
 const CSV_DELIMITER = '|';
 const CSV_NEWLINE = '\n';
 
-type ExamLevel =
-    "A" | "B" | "C"   // Chinese levels
-    | "T" | "G" | "E"  // American levels
+interface SourceFileInfo {
+    level: string,
+    regionRoot: string,
+    filename: string,
+    encoding: string,
+    pictureExt: string | null
+}
+
+const sourceFileInfoList: SourceFileInfo[] = [
+    {
+        level: "CN-A",
+        regionRoot: "cn",
+        filename: "radioa.txt",
+        encoding: "gbk",
+        pictureExt: null,
+    },
+    {
+        level: "CN-B",
+        regionRoot: "cn",
+        filename: "radiob.txt",
+        encoding: "gbk",
+        pictureExt: null,
+    },
+    {
+        level: "CN-C",
+        regionRoot: "cn",
+        filename: "radioc.txt",
+        encoding: "gbk",
+        pictureExt: null,
+    },
+    {
+        level: "US-Technician",
+        regionRoot: "us",
+        filename: "radiot.txt",
+        encoding: "utf-8",
+        pictureExt: "jpg",
+    },
+    {
+        level: "US-General",
+        regionRoot: "us",
+        filename: "radiog.txt",
+        encoding: "utf-8",
+        pictureExt: "jpg",
+    },
+    {
+        level: "US-Extra",
+        regionRoot: "us",
+        filename: "radioe.txt",
+        encoding: "utf-8",
+        pictureExt: "png",
+    },
+];
+
 
 interface Item {
     serial: string,
@@ -20,7 +74,7 @@ interface Item {
 }
 
 interface Suite {
-    level: ExamLevel,
+    level: string,
     randomSeed: number,
     items: Item[],
 }
@@ -47,9 +101,10 @@ function getPrng(seed = 0): RandomGenerator {
     }
 }
 
-function loadFile(level: ExamLevel): string {
-    const {filename, encoding} = sourceFileInfo[level];
-    const content = readFileSync(filename);
+function loadSource(sourceInfo: SourceFileInfo): string {
+    const {regionRoot, filename, encoding} = sourceInfo;
+    const fullPath = join(sourceRoot, regionRoot, filename)
+    const content = readFileSync(fullPath);
     const text = decode(content, encoding);
     const unifiedText = text.replace(/\r\n/g, "\n").replace(/\u001e/g, "-");
     return unifiedText;
@@ -66,41 +121,8 @@ function getDefaultItem(): Item {
     }
 }
 
-const sourceFileInfo: {[level in ExamLevel]: {filename: string, encoding: string, pictureExt: string | null}} = {
-    A: {
-        filename: "data/radioa.txt",
-        encoding: "gbk",
-        pictureExt: null,
-    },
-    B: {
-        filename: "data/radiob.txt",
-        encoding: "gbk",
-        pictureExt: null,
-    },
-    C: {
-        filename: "data/radioc.txt",
-        encoding: "gbk",
-        pictureExt: null,
-    },
-    T: {
-        filename: "data/radiot.txt",
-        encoding: "utf-8",
-        pictureExt: "jpg",
-    },
-    G: {
-        filename: "data/radiog.txt",
-        encoding: "utf-8",
-        pictureExt: "jpg",
-    },
-    E: {
-        filename: "data/radioe.txt",
-        encoding: "utf-8",
-        pictureExt: "png",
-    },
-}
-
-function parse(content: string, level: ExamLevel): Item[] {
-    if (level === "A" || level === "B" || level === "C") {
+function parse(content: string, region: SourceFileInfo['regionRoot']): Item[] {
+    if (region === "cn") {
         return parseCn(content);
     }
     else {
@@ -222,7 +244,7 @@ function shuffleBranches(suite: Suite, rng: () => number): void {
     }
 }
 
-function toCsv(suite: Suite): string {
+function toCsv(suite: Suite, pictureExt: string | null): string {
 
     function optionIndexLetter(index: number): string {
         return String.fromCharCode('A'.charCodeAt(0) + index)
@@ -237,8 +259,6 @@ function toCsv(suite: Suite): string {
         }
         return `<img src='${picturePath}'/>`
     }
-
-    const { pictureExt } = sourceFileInfo[suite.level];
 
     const lines = [];
     for (const item of suite.items) {
@@ -262,7 +282,7 @@ function toCsv(suite: Suite): string {
 function fixMissingPictureLabels(suite: Suite): void {
     for (const item of suite.items) {
         if (!item.picture) {
-            const possiblePath = `data/images/${item.serial}.jpg`
+            const possiblePath = `${sourceRoot}/cn/images/${item.serial}.jpg`
             if (existsSync(possiblePath)) {
                 item.picture = `${item.serial}.jpg`
                 console.warn(`Fixing item ${item.serial} missing link to picture`)
@@ -271,38 +291,36 @@ function fixMissingPictureLabels(suite: Suite): void {
     }
 }
 
-function generate(level: ExamLevel): void {
+function transform(sourceInfo: SourceFileInfo): void {
+    const { level, regionRoot } = sourceInfo;
     console.info(`\nTransforming for level ${level}`)
-    const fileContent = loadFile(level);
+    const fileContent = loadSource(sourceInfo);
     const seed = level.charCodeAt(0) + SEED_DELTA;
     const suite: Suite = {
         level,
         randomSeed: seed,
-        items: parse(fileContent, level),
+        items: parse(fileContent, regionRoot),
     };
     fixMissingPictureLabels(suite);
 
-    const jsonPath = 'generated/' + level + '.json';
+    const jsonPath = join(sourceRoot, regionRoot, generatedFileSubpath, level + '.json');
     console.info(`Exporting JSON to ${jsonPath}`)
     writeFileSync(jsonPath, JSON.stringify(suite, null, 4));
 
-    const csvPath = 'generated/' + level + '.csv';
+    const csvPath = join(sourceRoot, regionRoot, generatedFileSubpath, level + '.csv');
     const prng = getPrng(suite.randomSeed);
     shuffleBranches(suite, () => prng.get());
-    const csvContent = toCsv(suite);
+    const csvContent = toCsv(suite, sourceInfo.pictureExt);
     console.info(`Exporting CSV to ${csvPath}`)
-    writeFileSync('generated/' + level + '.csv', csvContent);
+    writeFileSync(csvPath, csvContent);
 
     console.info(`Done.`)
 }
 
 function main() {
-    generate("A");
-    generate("B");
-    generate("C");
-    generate("T");
-    generate("G");
-    generate("E");
+    for (const info of sourceFileInfoList) {
+        transform(info);
+    }
 }
 
 main()
