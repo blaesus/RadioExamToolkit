@@ -1,5 +1,6 @@
 {
     "level": "A",
+    "randomSeed": 65,
     "items": [
         {
             "serial": "LK0001",
@@ -11,7 +12,8 @@
                 "中华人民共和国业余无线电台管理办法，工业和信息化部"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0002",
@@ -23,7 +25,8 @@
                 "中华人民共和国电信条例，国务院"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0003",
@@ -35,7 +38,8 @@
                 "各地电信管理局"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0004",
@@ -47,7 +51,8 @@
                 "国家和地方公安部门"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0005",
@@ -59,7 +64,8 @@
                 "各地方与无线电设备生产销售和无线电应用有关的行政管理机构"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0011",
@@ -71,7 +77,8 @@
                 "作为日常公益活动的通信工具"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0012",
@@ -83,7 +90,8 @@
                 "在业余电台与其他业务电台遇到干扰纠纷时无条件优先保护其他业务电台"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0104",
@@ -95,7 +103,8 @@
                 "中华人民共和国电信法"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0007",
@@ -107,7 +116,8 @@
                 "无线电台执照管理规定"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0008",
@@ -119,7 +129,8 @@
                 "供私家车主或者相应组织作为行车安全保障和途中消遣工具"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0111",
@@ -131,7 +142,8 @@
                 "技术教学、民兵训练和公益通信"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0009",
@@ -143,7 +155,8 @@
                 "对用无线电台解决日常通信有实际需求的任何公民、社团和单位"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0051",
@@ -155,7 +168,8 @@
                 "很难说对错，业余电台的定义可以因人而异"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0052",
@@ -167,7 +181,8 @@
                 "其他职业人员，但不是业余无线电爱好者"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0112",
@@ -179,7 +194,8 @@
                 "拥有较高无线电技术水平并加入业余无线电协会的人"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0013",
@@ -191,7 +207,8 @@
                 "所用业余无线电台的天线的高度和长度"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0014",
@@ -203,7 +220,8 @@
                 "所有VHF和UHF频段"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0017",
@@ -215,7 +233,8 @@
                 "30MHz以上业余频段不大于100瓦，30MHz以下业余频段不大于25瓦"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0026",
@@ -227,7 +246,8 @@
                 "具备《业余无线电台操作证书》者申请设置业余无线电台不受年龄限制"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0027",
@@ -239,7 +259,8 @@
                 "年满十八周岁"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0041",
@@ -251,7 +272,8 @@
                 "熟悉无线电管理规定、具备当地无线电管理机构委托的考试机构设置的操作技术能力标准、发射设备符合国家技术标准、法律和行政法规规定的其他条件"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0042",
@@ -263,7 +285,8 @@
                 "熟悉无线电管理规定、实际上具备国家规定的操作技术能力但不必需取得相应的证明"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0020",
@@ -275,7 +298,8 @@
                 "地方业余无线电协会"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0022",
@@ -287,7 +311,8 @@
                 "地方无线电协会或者其他业余无线电民间组织出具的盖有公章的证明信件"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0043",
@@ -299,7 +324,8 @@
                 "境外无线电管理机构颁发或者开具的业余无线电台执照或证书也可以作为具备国家规定的操作技术能力的证明"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0006",
@@ -311,7 +337,8 @@
                 "经过所在单位或居委会批准"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0010",
@@ -323,7 +350,8 @@
                 "视为一个业余电台，指配一个电台呼号，每个频段选择一台设备加以核定并将参数载入电台执照"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0023",
@@ -335,7 +363,8 @@
                 "本人写的申请书，身份证和操作证书的原件、复印件"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0028",
@@ -347,7 +376,8 @@
                 "需要到外地移动操作的手持台"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0029",
@@ -359,7 +389,8 @@
                 "必须由地方业余无线电协会作为申请单位，经本地无线电管理机构办理批准设台"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0030",
@@ -371,7 +402,8 @@
                 "任何地方业余无线电民间组织"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0031",
@@ -383,7 +415,8 @@
                 "国家无线电管理机构"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0032",
@@ -395,7 +428,8 @@
                 "设台地的地方无线电民间组织"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0033",
@@ -407,7 +441,8 @@
                 "反正已经有了电台执照，只需向核发执照的无线电管理机构通报变更情况即可，不必申请办理变更和换发执照"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0044",
@@ -419,7 +454,8 @@
                 "有效期届满三个月之内"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0045",
@@ -431,7 +467,8 @@
                 "只需及时向核发执照的无线电管理机构通报变更情况，进行备案即可"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0046",
@@ -443,7 +480,8 @@
                 "受国家无线电管理机构委托的全国性业余无线电民间组织"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0089",
@@ -455,7 +493,8 @@
                 "不需要办理任何手续"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0090",
@@ -467,7 +506,8 @@
                 "不需要办理任何手续"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0024",
@@ -479,7 +519,8 @@
                 "必须具有数字对讲方式"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0025",
@@ -491,7 +532,8 @@
                 "指配频带和必要带宽"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0038",
@@ -503,7 +545,8 @@
                 "国产商品设备应当具备《无线电发射设备型号核准证》，国外商品设备符合国际流行技术标准即可"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0039",
@@ -515,7 +558,8 @@
                 "国家关于专业无线电通信发射设备的技术标准"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0040",
@@ -527,7 +571,8 @@
                 "发射频率可以在业余频段和非业余频段之间选择"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0116",
@@ -539,7 +584,8 @@
                 "工作频率范围足够宽、杂散发射不低于最大允许功率电平、带宽大于允许最低值"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0117",
@@ -551,7 +597,8 @@
                 "百分之几（或者兆赫）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0118",
@@ -563,7 +610,8 @@
                 "千赫（或者赫芝）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0125",
@@ -575,7 +623,8 @@
                 "射频电路中电容器内极板间的电场是一种辐射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0126",
@@ -587,7 +636,8 @@
                 "闪电产生的电磁波干扰是一种发射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0137",
@@ -599,7 +649,8 @@
                 "带内发射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0139",
@@ -611,7 +662,8 @@
                 "发射功率不低于功率限额，输出阻抗符合工业标准"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0047",
@@ -623,7 +675,8 @@
                 "一般业余无线电书籍所叙述的频率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0048",
@@ -635,7 +688,8 @@
                 "可以任意使用，但在遇到其他业务电台使用时要主动避让"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0049",
@@ -647,7 +701,8 @@
                 "依法成立的地方业余无线电民间组织的业余电台，在其常用的台网频率上享有比其他个人设置的业余电台优先的使用权"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0113",
@@ -659,7 +714,8 @@
                 "授权"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0114",
@@ -671,7 +727,8 @@
                 "授权"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0115",
@@ -683,7 +740,8 @@
                 "授权"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0140",
@@ -695,7 +753,8 @@
                 "安全业务和一般业务"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0141",
@@ -707,7 +766,8 @@
                 "容许因设备技术问题对主要业务电台产生短时间有害干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0142",
@@ -719,7 +779,8 @@
                 "容许因设备技术问题对主要业务电台产生短时间有害干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0143",
@@ -731,7 +792,8 @@
                 "容许因设备技术问题对主要业务电台产生短时间有害干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1112",
@@ -743,7 +805,8 @@
                 "300到3000MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1113",
@@ -755,7 +818,8 @@
                 "30到300kHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1114",
@@ -767,7 +831,8 @@
                 "300到3,000kHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0144",
@@ -779,7 +844,8 @@
                 "7MHz、14MHz、28MHz、144MHz、430MHz频段"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0146",
@@ -791,7 +857,8 @@
                 "220MHz、430MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0147",
@@ -803,7 +870,8 @@
                 "5个，28-29.7MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0148",
@@ -815,7 +883,8 @@
                 "10.1MHz、24.89MHz、430MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0157",
@@ -827,7 +896,8 @@
                 "52-56MHz，次要业务"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0158",
@@ -839,7 +909,8 @@
                 "144-148MHz；次要业务"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0159",
@@ -851,7 +922,8 @@
                 "420-470MHz，次要业务"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0160",
@@ -863,7 +935,8 @@
                 "水上移动和航空移动"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0171",
@@ -875,7 +948,8 @@
                 "144.035-144.053MHz和145.550-145.750MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0172",
@@ -887,7 +961,8 @@
                 "430-431.2MHz和435-436MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1031",
@@ -899,7 +974,8 @@
                 "433MHz至435MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1032",
@@ -911,7 +987,8 @@
                 "145.4MHz至144.6MHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0077",
@@ -923,7 +1000,8 @@
                 "业余电台在通信中可以用自造的呼号作为无线电管理机构指配的业余电台呼号的补充，一起作为电台的标识"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0078",
@@ -935,7 +1013,8 @@
                 "一般指无线电管理机构指配的电台呼号，但也可以是对方能够理解的民间自创呼号、代号、代码等"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0080",
@@ -947,7 +1026,8 @@
                 "业余无线电台设台人在提交设台申请的同时提出所要求指配的呼号，经服务机构同意后，报无线电管理机构正式指配"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0081",
@@ -959,7 +1039,8 @@
                 "业余无线电台执照有效期届满、设台人向核发执照的无线电管理机构申请办理延续手续时可以申请另行指配业余无线电台呼号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0082",
@@ -971,7 +1052,8 @@
                 "由业余无线电爱好者根据需求提出建议，当地无线电管理机构批准"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0083",
@@ -983,7 +1065,8 @@
                 "可以，但只限于当地业余无线电台参加国际重要业余无线电活动的特殊情况"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0091",
@@ -995,7 +1078,8 @@
                 "可以在保留原电台呼号的同时申请指配迁入地的新电台呼号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0092",
@@ -1007,7 +1091,8 @@
                 "只需到迁入地的地方无线电管理机构申请申请办理为迁移后的电台继续使用原电台呼号的全部手续"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1072",
@@ -1019,7 +1104,8 @@
                 "在HF频段进行国内呼叫和联络时可以把不完整呼号视作“呼号”"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0079",
@@ -1031,7 +1117,8 @@
                 "BH1AAA/B9"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0084",
@@ -1043,7 +1130,8 @@
                 "BH9/BH1ZZZ或者BH1ZZZ"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0086",
@@ -1055,7 +1143,8 @@
                 "BH7/BH1ZZZ"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0087",
@@ -1067,7 +1156,8 @@
                 "移动发射操作"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0088",
@@ -1079,7 +1169,8 @@
                 "临时发射操作"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0093",
@@ -1091,7 +1182,8 @@
                 "BH1ZZZ"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0056",
@@ -1103,7 +1195,8 @@
                 "正确；但需注意态度耐心、用语文明"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0057",
@@ -1115,7 +1208,8 @@
                 "不算错误但也不值得提倡"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0058",
@@ -1127,7 +1221,8 @@
                 "只要所转达的信息是有利于社会的公益信息，就是合法行为"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0059",
@@ -1139,7 +1234,8 @@
                 "只要所播发的通知或讲座是涉及宣传业余电台管理知识的，不能算违法行为"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0060",
@@ -1151,7 +1247,8 @@
                 "可提倡使用稀有语言或方言，尽量使特定通信对象以外的业余无线电台听不懂，以减少他台呼叫和插入的机会"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0061",
@@ -1163,7 +1260,8 @@
                 "不必事先公开或者提交给核发其业余无线电台执照的地方无线电管理机构，以后再说"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0062",
@@ -1175,7 +1273,8 @@
                 "有了电台执照就是万事大吉，不必认真了解和遵守什么具体规定"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0063",
@@ -1187,7 +1286,8 @@
                 "青少年可以，成人不可以"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0064",
@@ -1199,7 +1299,8 @@
                 "尚未取得关于具备操作技术能力有效证明文件者如为青少年，可以在集体业余电台独立操作，如为成人则任何情况下都不可以进行发射操作"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0065",
@@ -1211,7 +1312,8 @@
                 "应当确保其无线电发射设备经常处于工作状态，以提高业余频率的实际占用度"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0066",
@@ -1223,7 +1325,8 @@
                 "只要出于个人对信息的兴趣而不涉及赢利，可以接收任何无线电信号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0067",
@@ -1235,7 +1338,8 @@
                 "既然自己可以收到，别人也一定可以收到，当然可以传播、公布或者利用"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0068",
@@ -1247,7 +1351,8 @@
                 "可以，用于提起其他有业余无线电台操作员精神，防止乏困"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0069",
@@ -1259,7 +1364,8 @@
                 "不可以发布传、播违法信息。但违反公共道德的信息属于水平问题，不鼓励就是了"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0070",
@@ -1271,7 +1377,8 @@
                 "只要管理部门不来查处就可以"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0071",
@@ -1283,7 +1390,8 @@
                 "如果设台人或者设台单位本身是以这类经营为生的，应适当理解和容忍"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0072",
@@ -1295,7 +1403,8 @@
                 "不文明行为，对其他业余电台不够礼貌"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0073",
@@ -1307,7 +1416,8 @@
                 "有了电台执照，日常一切言行当然可以带到电台通信中，无责任可言"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0181",
@@ -1319,7 +1429,8 @@
                 "VHF/UHF频段发射电台应辐射尽量大的功率，HF频段发射电台应辐射尽量小的功率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0247",
@@ -1331,7 +1442,8 @@
                 "用大功率信号对其进行压制"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1010",
@@ -1343,7 +1455,8 @@
                 "将业余无线电台设置到公众对讲机的频率，但只能进行由业余无线电台到公众对讲机的单向发信"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0053",
@@ -1355,7 +1468,8 @@
                 "在日常应急通信训练中，业余无线电台可以和地方公益性救援团体的非业余无线电台进行通信，但须经当地业余无线电协会同意"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0054",
@@ -1367,7 +1481,8 @@
                 "在无线电技术研究中，仅可与具备其他业务电台执照的对象通信，内容限于技术实验所需的信号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0055",
@@ -1379,7 +1494,8 @@
                 "在日常公益性社会活动中，业余无线电台的通信内容可以涉及各种公益机构交办的任务"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0075",
@@ -1391,7 +1507,8 @@
                 "通信时间、通信模式、对方信号报告、对方台址、对方天气"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0076",
@@ -1403,7 +1520,8 @@
                 "CALL（通信对方）、T IME、FREQ、RIG（对方）、RST（双方）、PWR（双方）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1011",
@@ -1415,7 +1533,8 @@
                 "通过卡片管理局寄出卡片并希望对方回卡时，应在卡片上注明PSE QSL DIRECT"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1042",
@@ -1427,7 +1546,8 @@
                 "如果在联络中没有听清对方呼号，可以在寄发QSL卡片的对方台名栏中填写对方操作员姓名"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0034",
@@ -1439,7 +1559,8 @@
                 "符合申请人关于设置中继台的客观需求和技术考虑"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0035",
@@ -1451,7 +1572,8 @@
                 "设热备份系统，保证不间断工作"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0036",
@@ -1463,7 +1585,8 @@
                 "为保证中继台正常运行，要求覆盖区内所有业余电台缴纳维护成本，否则不准使用"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0037",
@@ -1475,7 +1598,8 @@
                 "可以在国家《无线电频率划分规定》所规定业余频率范围内任意选择"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0275",
@@ -1487,7 +1611,8 @@
                 "鼓励青少年学生通过中继台交流解题方法和学习心得"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1096",
@@ -1499,7 +1624,8 @@
                 "等待，直到你要呼叫的电台呼叫CQ后，立刻回答他"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0074",
@@ -1511,7 +1637,8 @@
                 "国家计量监督部门的监督检查"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0103",
@@ -1523,7 +1650,8 @@
                 "中华人民共和国电信法"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0105",
@@ -1535,7 +1663,8 @@
                 "在例行范围和例行时间内"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0106",
@@ -1547,7 +1676,8 @@
                 "对无线电发射设备的生产、销售实施的指导和行业自律性管理"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0107",
@@ -1559,7 +1689,8 @@
                 "依法设置的业余电台不在管制范围之内"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0108",
@@ -1571,7 +1702,8 @@
                 "在单位、居民区实施，由单位上级业务主管机构和区人民政府共同决定"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0109",
@@ -1583,7 +1715,8 @@
                 "所在军区派出的专门机构"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0110",
@@ -1595,7 +1728,8 @@
                 " 责令改正；并开除业余无线电协会会籍、罚没无线电通信设备"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0050",
@@ -1607,7 +1741,8 @@
                 "由俱乐部网络控制台决定是其他业余电台是否可以加入"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0232",
@@ -1619,7 +1754,8 @@
                 "先用吹话筒、吹口哨等方法发出连续信号检查天线驻波比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0233",
@@ -1631,7 +1767,8 @@
                 "话筒离嘴距离在2公分以上，电键按键时间不短于5秒钟"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0235",
@@ -1643,7 +1780,8 @@
                 "可以先启动呼叫和进行通信，只要没有其他电台出来交涉就可放心使用"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0236",
@@ -1655,7 +1793,8 @@
                 "Any body here？"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0238",
@@ -1667,7 +1806,8 @@
                 "CQ、CQ、CQ，CQ、CQ、CQ，CQ、CQ、CQ。BH1ZZZ呼叫。请过来。"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0239",
@@ -1679,7 +1819,8 @@
                 "CQ CQ CQ, CQ CQ CQ, CQ CQ CQ. This is BH1ZZZ. Back to you."
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0241",
@@ -1691,7 +1832,8 @@
                 "8YYY、8YYY、8YYY。BH1ZZZ呼叫。请过来。"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0242",
@@ -1703,7 +1845,8 @@
                 "8YYY, 8YYY, YYY. This is BH1ZZZ. Over."
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0244",
@@ -1715,7 +1858,8 @@
                 "只要双方都是自己熟悉的业余电台操作员，可直接插入谈话，不必拘泥礼节"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0245",
@@ -1727,7 +1871,8 @@
                 "自己拥有比原通信双方更有吸引力的谈话内容"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1046",
@@ -1739,7 +1884,8 @@
                 "对方呼号、信号报告、设备情况"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1097",
@@ -1751,7 +1897,8 @@
                 "先给出信号报告，再报出自己的呼号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1098",
@@ -1763,7 +1910,8 @@
                 "呼叫重庆的电台"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1102",
@@ -1775,7 +1923,8 @@
                 "将你电台中的镍氢电池换成锂电池"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1131",
@@ -1787,7 +1936,8 @@
                 "使用快速扫描模式来切换到那个频率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0287",
@@ -1799,7 +1949,8 @@
                 "QSL？"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0292",
@@ -1811,7 +1962,8 @@
                 "QSB？"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0294",
@@ -1823,7 +1975,8 @@
                 "QRM"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0313",
@@ -1835,7 +1988,8 @@
                 "QRV"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0321",
@@ -1847,7 +2001,8 @@
                 "QSP　××××"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0331",
@@ -1859,7 +2014,8 @@
                 "ATR"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0332",
@@ -1871,7 +2027,8 @@
                 "天线测试仪"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0352",
@@ -1883,7 +2040,8 @@
                 "FIND"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0361",
@@ -1895,7 +2053,8 @@
                 "高兴"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0373",
@@ -1907,7 +2066,8 @@
                 "老人"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0376",
@@ -1919,7 +2079,8 @@
                 "SB"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0379",
@@ -1931,7 +2092,8 @@
                 "RMKS"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0380",
@@ -1943,7 +2105,8 @@
                 "VXCO"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0381",
@@ -1955,7 +2118,8 @@
                 "XTL"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0396",
@@ -1967,7 +2131,8 @@
                 "星期"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0402",
@@ -1979,7 +2144,8 @@
                 "谢谢你"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0404",
@@ -1991,7 +2157,8 @@
                 "惯用口头语，相当于电话的“喂”，仅提起注意，不包含任何意义"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0405",
@@ -2003,7 +2170,8 @@
                 "垂直天线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0407",
@@ -2015,7 +2183,8 @@
                 "定向天线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0408",
@@ -2027,7 +2196,8 @@
                 "垂直天线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0409",
@@ -2039,7 +2209,8 @@
                 "垂直天线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0410",
@@ -2051,7 +2222,8 @@
                 "偶极天线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0193",
@@ -2063,7 +2235,8 @@
                 "北京时间的小时数加8，如小时数大于24，则小时数减24，日期改为后一天。"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0194",
@@ -2075,7 +2248,8 @@
                 "北京时间的小时数减8，如小时数小于0，则小时数加24，日期改为前一天。"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0202",
@@ -2087,7 +2261,8 @@
                 "42、43、44、50"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0204",
@@ -2099,7 +2274,8 @@
                 "23、24、27"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0862",
@@ -2111,7 +2287,8 @@
                 "根据国际政治行政区划对地球表面进行网格划分和命名，用以标示地理位置的系统"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0863",
@@ -2123,7 +2300,8 @@
                 "呼号前缀字母加2位数字和2个字母"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0864",
@@ -2135,7 +2313,8 @@
                 "4字符网格名称用于HF频段通信，6字符网格名称用于VHF/UHF通信"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1208",
@@ -2147,7 +2326,8 @@
                 "用于无线电测向运动的设备"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0431",
@@ -2159,7 +2339,8 @@
                 "欧（姆）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0432",
@@ -2171,7 +2352,8 @@
                 "欧（姆）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0433",
@@ -2183,7 +2365,8 @@
                 "瓦（特）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0434",
@@ -2195,7 +2378,8 @@
                 "欧（姆）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0466",
@@ -2207,7 +2391,8 @@
                 "10＾(-6)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0467",
@@ -2219,7 +2404,8 @@
                 "10＾(-6)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0468",
@@ -2231,7 +2417,8 @@
                 "10＾(-3)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0469",
@@ -2243,7 +2430,8 @@
                 "10＾3"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0470",
@@ -2255,7 +2443,8 @@
                 "10＾(-12)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0471",
@@ -2267,7 +2456,8 @@
                 "10＾(-12)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0472",
@@ -2279,7 +2469,8 @@
                 "10＾(-9)"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0473",
@@ -2291,7 +2482,8 @@
                 "10＾9"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0495",
@@ -2303,7 +2495,8 @@
                 "16kHz – 56kHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0566",
@@ -2315,7 +2508,8 @@
                 "35dBμ"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0567",
@@ -2327,7 +2521,8 @@
                 "25dBm"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0568",
@@ -2339,7 +2534,8 @@
                 "34dBm"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0438",
@@ -2351,7 +2547,8 @@
                 "与电源的电动势方向相同"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0440",
@@ -2363,7 +2560,8 @@
                 "流过电阻的电流I，与两端的电压U成反比，与阻值R成正比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0512",
@@ -2375,7 +2573,8 @@
                 "约50伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0513",
@@ -2387,7 +2586,8 @@
                 "约50伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0518",
@@ -2399,7 +2599,8 @@
                 "约141伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0519",
@@ -2411,7 +2612,8 @@
                 "约141伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0529",
@@ -2423,7 +2625,8 @@
                 "两个或多个任意信号之间的幅度关系"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0537",
@@ -2435,7 +2638,8 @@
                 "减少电源（或信号源）本身的电能消耗"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0577",
@@ -2447,7 +2651,8 @@
                 "该元件接入任何电路时的实际消耗功率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1107",
@@ -2459,7 +2664,8 @@
                 "脉率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1134",
@@ -2471,7 +2677,8 @@
                 "伏特"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1135",
@@ -2483,7 +2690,8 @@
                 "安培"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1136",
@@ -2495,7 +2703,8 @@
                 "平流"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1138",
@@ -2507,7 +2716,8 @@
                 "橡胶"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1139",
@@ -2519,7 +2729,8 @@
                 "汞"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1140",
@@ -2531,7 +2742,8 @@
                 "电压"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0123",
@@ -2543,7 +2755,8 @@
                 "12.5kHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0138",
@@ -2555,7 +2768,8 @@
                 "一再阻断按规定正常开展的无线电通信业务的干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0416",
@@ -2567,7 +2781,8 @@
                 "射频滤波器、变频器、音频滤波器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0417",
@@ -2579,7 +2794,8 @@
                 "射频振荡器、射频功率放大器、驻波测量电路"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0418",
@@ -2591,7 +2807,8 @@
                 "自动控制发射信号的频谱使其保持在核准的必要带宽范围内"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0420",
@@ -2603,7 +2820,8 @@
                 "把无线电发射机输出的射频信号电流转换为热能"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0421",
@@ -2615,7 +2833,8 @@
                 "把空间的有用电磁波转换为音频电压电流信号"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0422",
@@ -2627,7 +2846,8 @@
                 "尽量大的音频输出功率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0533",
@@ -2639,7 +2859,8 @@
                 "无穷多个连续的频率分量"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0535",
@@ -2651,7 +2872,8 @@
                 "连续的无限窄脉冲"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0536",
@@ -2663,7 +2885,8 @@
                 "连续的无限窄脉冲"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0572",
@@ -2675,7 +2898,8 @@
                 "检波"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0713",
@@ -2687,7 +2911,8 @@
                 "一条复杂的周期性曲线"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0716",
@@ -2699,7 +2924,8 @@
                 "星座图和眼图"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0784",
@@ -2711,7 +2937,8 @@
                 "幅度调制（调幅）、频率调制（调频）、电码调制（摩尔斯）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0786",
@@ -2723,7 +2950,8 @@
                 "射频输出实际占用带宽为由电路决定的固定值，通信常用的是25kHz或12.5kHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0791",
@@ -2735,7 +2963,8 @@
                 "对调幅信号进行解调的过程称为鉴频"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0813",
@@ -2747,7 +2976,8 @@
                 "输出到天线系统的有用信号功率与到达天线的包含杂散等无用信号的总功率之比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0814",
@@ -2759,7 +2989,8 @@
                 "损耗的能量消失在电容、电感、开关器件等零部件中"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0816",
@@ -2771,7 +3002,8 @@
                 "灵敏度指标数值越大，对与有用信号同时出现的干扰信号的响应越灵敏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0819",
@@ -2783,7 +3015,8 @@
                 "带有静噪功能的接收机关闭静噪功能时，按照灵敏度定义测得的灵敏度"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0854",
@@ -2795,7 +3028,8 @@
                 "衰减和衰落是一回事，指信号通过信道或电路后发生幅度随时间而起伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1044",
@@ -2807,7 +3041,8 @@
                 "峰包功率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1099",
@@ -2819,7 +3054,8 @@
                 "载波静噪"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1100",
@@ -2831,7 +3067,8 @@
                 "取决于被调制信号与载波之间的相位角关系"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1177",
@@ -2843,7 +3080,8 @@
                 "本底噪声"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1180",
@@ -2855,7 +3093,8 @@
                 "由于接收机的音量调节得过大而导致的附加干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1202",
@@ -2867,7 +3106,8 @@
                 "PM"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1203",
@@ -2879,7 +3119,8 @@
                 "AM"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0689",
@@ -2891,7 +3132,8 @@
                 "开关电路中半导体元器件的损耗小，可以使用轻巧的小规格元器件"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0702",
@@ -2903,7 +3145,8 @@
                 "天线和馈线上都只有行波"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0904",
@@ -2915,7 +3158,8 @@
                 "1/2波长的奇数倍"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0910",
@@ -2927,7 +3171,8 @@
                 "长度为1/4波长、终端分别为开路和短路时的电压驻波比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0918",
@@ -2939,7 +3184,8 @@
                 "它们在空间没有指向性，向各个方向均匀辐射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0919",
@@ -2951,7 +3197,8 @@
                 "在水平方向呈现8字形方向特性"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0925",
@@ -2963,7 +3210,8 @@
                 "一般天线与电缆直接相连，匹配不良。在天线和电联之间加接“巴伦”即可解决问题"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0926",
@@ -2975,7 +3223,8 @@
                 "输入到天线的总射频功率与天线辐射到空间的电磁波功率之比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0929",
@@ -2987,7 +3236,8 @@
                 "“相对于1/4波长接地天线的增益”，即以1/4波长垂直接地天线作为比较基准得到的天线增益"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0930",
@@ -2999,7 +3249,8 @@
                 "这种表达没有说清楚计算增益所采用的比较基准，缺乏实际意义"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0931",
@@ -3011,7 +3262,8 @@
                 "“相对于垂直短天线天线的增益”，即以高度远小于波长的短垂直天线作为基准作为比较基准得到的天线增益"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0932",
@@ -3023,7 +3275,8 @@
                 "乙信号比甲信号强3.5dB"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0933",
@@ -3035,7 +3288,8 @@
                 "乙信号比甲信号强7.1dB"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1062",
@@ -3047,7 +3301,8 @@
                 "最大辐射方向辐射功率密度与最小辐射方向辐射功率密度之比的dB值"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1063",
@@ -3059,7 +3314,8 @@
                 "最大辐射方向辐射功率密度与最小辐射方向辐射功率密度之比的dB值"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1126",
@@ -3071,7 +3327,8 @@
                 "在电缆芯线中串联带通滤波器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1173",
@@ -3083,7 +3340,8 @@
                 "将信号从TNC传送到电脑"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1183",
@@ -3095,7 +3353,8 @@
                 "增强接收机的信噪比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1184",
@@ -3107,7 +3366,8 @@
                 "电子管电压表"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1185",
@@ -3119,7 +3379,8 @@
                 "电台接地的质量"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1186",
@@ -3131,7 +3392,8 @@
                 "0"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1188",
@@ -3143,7 +3405,8 @@
                 "使你的信号失真"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1189",
@@ -3155,7 +3418,8 @@
                 "过载"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1190",
@@ -3167,7 +3431,8 @@
                 "这样就可以减少谐波"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1191",
@@ -3179,7 +3444,8 @@
                 "空气电介质电缆不能在冰点以下使用"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1211",
@@ -3191,7 +3457,8 @@
                 "相位被倒转了"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1213",
@@ -3203,7 +3470,8 @@
                 "以上三项全部正确"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1216",
@@ -3215,7 +3483,8 @@
                 "相对于参考天线，发射或接收时的阻抗增加"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1217",
@@ -3227,7 +3496,8 @@
                 "能延长发信机的使用寿命"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1218",
@@ -3239,7 +3509,8 @@
                 "12欧姆"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1219",
@@ -3251,7 +3522,8 @@
                 "因为它比其它任何一种馈线都便宜"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1221",
@@ -3263,7 +3535,8 @@
                 "驻波比越高"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1222",
@@ -3275,7 +3548,8 @@
                 "DB-23型连接器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1223",
@@ -3287,7 +3561,8 @@
                 "来自其他电台的干扰导致信号失真"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1224",
@@ -3299,7 +3574,8 @@
                 "75欧姆同轴软电缆"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0972",
@@ -3311,7 +3587,8 @@
                 "6.88×10＾6 米/秒"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0973",
@@ -3323,7 +3600,8 @@
                 "真空波速的1.41倍"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0974",
@@ -3335,7 +3613,8 @@
                 "与真空波速相同"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1058",
@@ -3347,7 +3626,8 @@
                 "正弦波、方波、三角波等"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1060",
@@ -3359,7 +3639,8 @@
                 "与距离的平方成正比，与频率无关"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1067",
@@ -3371,7 +3652,8 @@
                 "天线高度、发射功率和调制方式"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1068",
@@ -3383,7 +3665,8 @@
                 "发射天线和接收天线的增益"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1104",
@@ -3395,7 +3678,8 @@
                 "随着传播路径的增加，数据通信速率会线性地增加"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1106",
@@ -3407,7 +3691,8 @@
                 "波展"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1108",
@@ -3419,7 +3704,8 @@
                 "电离辐射和非电离辐射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1109",
@@ -3431,7 +3717,8 @@
                 "速度随着频率的增加而增加"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1110",
@@ -3443,7 +3730,8 @@
                 "该电磁波的波长取决于信号所占的带宽"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1111",
@@ -3455,7 +3743,8 @@
                 "使用频率的赫兹数（Hz）乘以300可以得到以米为单位的波长"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1115",
@@ -3467,7 +3756,8 @@
                 "18600英里/每小时"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1116",
@@ -3479,7 +3769,8 @@
                 "信号经过了宇宙的反射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1143",
@@ -3491,7 +3782,8 @@
                 "VHF"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1144",
@@ -3503,7 +3795,8 @@
                 "压力波"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0255",
@@ -3515,7 +3808,8 @@
                 "发信自动音量控制，对音频输入电平进行检测并反馈控制，以维持其在适当限度之内"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0258",
@@ -3527,7 +3821,8 @@
                 "自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0259",
@@ -3539,7 +3834,8 @@
                 "自动天线调谐，对天线电路的电压驻波比进行检测并进行自动补偿，以维持最小驻波比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0260",
@@ -3551,7 +3847,8 @@
                 "NFM为单频率守候方式，WFM为双频率守候方式"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0261",
@@ -3563,7 +3860,8 @@
                 "自动静噪，即在接收机没有收到信号时自动关闭音频输出"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0262",
@@ -3575,7 +3873,8 @@
                 "自动静噪，即在接收机没有收到信号时自动关闭音频输出"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0783",
@@ -3587,7 +3886,8 @@
                 "能。调频信号越强，频偏也必然越大，解调后的声音也越大"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0788",
@@ -3599,7 +3899,8 @@
                 "可以正常听到信号，但声音比较小"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0789",
@@ -3611,7 +3912,8 @@
                 "可以正常听到信号，但声音的高音频部分衰减较大，缺乏高音"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0790",
@@ -3623,7 +3925,8 @@
                 "由天线接收到的背景噪声的随机幅度变化经放大形成，其大小与天线背景噪声电压的平方根成正比"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0855",
@@ -3635,7 +3938,8 @@
                 "可能是中继台发射机发生了寄生振荡"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0898",
@@ -3647,7 +3951,8 @@
                 "上行功率太大造成浪费和电磁污染；不提倡"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0971",
@@ -3659,7 +3964,8 @@
                 "移动过程中设备与大地之间的分布电容发生微小的变动"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1065",
@@ -3671,7 +3977,8 @@
                 "地磁影响影响"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1130",
@@ -3683,7 +3990,8 @@
                 "使接收机的输出音量调到最大"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1182",
@@ -3695,7 +4003,8 @@
                 "电台的发射频率不准确"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1237",
@@ -3707,7 +4016,8 @@
                 "全频偏方式语音信号经过压缩，半频偏方式语音信号只压缩低音频分量"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0436",
@@ -3719,7 +4029,8 @@
                 "旧干电池的电动势为0"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0482",
@@ -3731,7 +4042,8 @@
                 "频谱分析仪"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0483",
@@ -3743,7 +4055,8 @@
                 "音频信号发生器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0691",
@@ -3755,7 +4068,8 @@
                 "元器件接点不稳造成火花放电干扰"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1064",
@@ -3767,7 +4081,8 @@
                 "EHF（极高频）"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1122",
@@ -3779,7 +4094,8 @@
                 "吊杆话筒"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1137",
@@ -3791,7 +4107,8 @@
                 "约240伏特"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1151",
@@ -3803,7 +4120,8 @@
                 "电感"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1153",
@@ -3815,7 +4133,8 @@
                 "2.2伏"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1154",
@@ -3827,7 +4146,8 @@
                 "锂离子电池"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1162",
@@ -3839,7 +4159,8 @@
                 "场效应管"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1163",
@@ -3851,7 +4172,8 @@
                 "场效应管"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1167",
@@ -3863,7 +4185,8 @@
                 "反射器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1169",
@@ -3875,7 +4198,8 @@
                 "二极管"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1170",
@@ -3887,7 +4211,8 @@
                 "双极型晶体管"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1192",
@@ -3899,7 +4224,8 @@
                 "与电路同相连接"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1193",
@@ -3911,7 +4237,8 @@
                 "与电路同相连接"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1194",
@@ -3923,7 +4250,8 @@
                 "示波器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1195",
@@ -3935,7 +4263,8 @@
                 "没有让待测量设备适当地预热"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1196",
@@ -3947,7 +4276,8 @@
                 "驻波比和射频功率"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1206",
@@ -3959,7 +4289,8 @@
                 "相位锁定"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1229",
@@ -3971,7 +4302,8 @@
                 "将蓄电池串联一个电灯泡作为限流装置，然后连接到220伏市电上"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1231",
@@ -3983,7 +4315,8 @@
                 "可能会产生过高的充电电压，引起触电的危险"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1235",
@@ -3995,7 +4328,8 @@
                 "伽玛辐射"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0996",
@@ -4007,7 +4341,8 @@
                 "避雷针、过压保护器、熔丝"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0997",
@@ -4019,7 +4354,8 @@
                 "当接闪器引入雷击电流时迅速烧断熔丝，阻断其流动"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0998",
@@ -4031,7 +4367,8 @@
                 "接闪器到接地体之间的引下线平时没有电流流过，采用直径0.5毫米的导线为好"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0999",
@@ -4043,7 +4380,8 @@
                 "以避雷针为顶点、避雷针高度为半径的半球体以内空间"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1000",
@@ -4055,7 +4393,8 @@
                 "6V"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1001",
@@ -4067,7 +4406,8 @@
                 "触及不同频率、相同电压的导线时，对人体的危害没有差别"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1039",
@@ -4079,7 +4419,8 @@
                 "迅速起身逃离火场"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1040",
@@ -4091,7 +4432,8 @@
                 "只要确保设备外壳与地绝缘，双脚是否与地绝缘、双手是否同时操作都没有关系"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1043",
@@ -4103,7 +4445,8 @@
                 "HF射频交流电、UHF射频交流电、工频交流电"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1225",
@@ -4115,7 +4458,8 @@
                 "以上三项全部正确"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1226",
@@ -4127,7 +4471,8 @@
                 "其他三项全部正确"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1227",
@@ -4139,7 +4484,8 @@
                 "所有使用交流供电的设备的电源线都使用带有单独保护地线端的三线插头"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1228",
@@ -4151,7 +4497,8 @@
                 "要在每一个避雷器处两端并联一个开关，以便在使用大功率输出的时候可以将避雷器旁路掉"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1230",
@@ -4163,7 +4510,8 @@
                 "长时间不使用可能会引起自燃"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1233",
@@ -4175,7 +4523,8 @@
                 "静电可能损坏接地系统"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1234",
@@ -4187,7 +4536,8 @@
                 "在交流供电入口处并联安装一个电容"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0574",
@@ -4199,7 +4549,8 @@
                 "在发信机与天线间串联中心频率为F1的带阻滤波器，在收信机与天线间串接中心频率为F1的带阻滤波器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK0575",
@@ -4211,7 +4562,8 @@
                 "中心频率约为3kHz的带通滤波器"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1002",
@@ -4223,7 +4575,8 @@
                 "美国FCC《射频电磁场人员暴露准则的测评方法规》"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1003",
@@ -4235,7 +4588,8 @@
                 "发射频率30MHz以上的所有业余电台"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1004",
@@ -4247,7 +4601,8 @@
                 "业余电台可不受环境保护部门的监督管理"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1005",
@@ -4259,7 +4614,8 @@
                 "所在地区业余无线电协会"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1006",
@@ -4271,7 +4627,8 @@
                 "立即向当地城管机构报告"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1007",
@@ -4283,7 +4640,8 @@
                 "在距辐射体天线100米以内最小辐射方向上选点测量"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1008",
@@ -4295,7 +4653,8 @@
                 "任何时刻的瞬时辐射场强都应小于与频率有关的限值"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1009",
@@ -4307,7 +4666,8 @@
                 "1200MHz-30GHz"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1128",
@@ -4319,7 +4679,8 @@
                 "连接在固定住电台的挂置架上"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         },
         {
             "serial": "LK1236",
@@ -4331,7 +4692,8 @@
                 "较低频率的无线电波相对高频率的无线电波拥有更高的能量"
             ],
             "correctBranchIndex": 0,
-            "picture": ""
+            "picture": "",
+            "reference": ""
         }
     ]
 }
