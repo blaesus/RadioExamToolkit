@@ -166,8 +166,8 @@ function parseCn(content: string): Item[] {
     return items
 }
 
-function shuffle<T>(array: T[], rng: () => number, maxShuffleLimit?: number): void {
-    let i = maxShuffleLimit || array.length;
+function shuffle<T>(array: T[], rng: () => number): void {
+    let i = array.length;
   
     while (i !== 0) {
         const randomIndex = Math.floor(rng() * i);
@@ -183,12 +183,23 @@ function last<T>(array: T[]): T | undefined {
     return array[array.length - 1];
 }
 
+function shouldRemainInPlace(branch?: string): boolean {
+    return !!branch && branch.startsWith(`All`)
+}
+
 function shuffleBranches(suite: Suite, rng: () => number): void {
     for (const item of suite.items) {
         const correctBranchBody = item.branches[item.correctBranchIndex];
-        const shouldLastBranchRemainInPlace = last(item.branches)?.startsWith("All of these choices");
-        const shuffleLimit = shouldLastBranchRemainInPlace ? item.branches.length - 1: item.branches.length;
-        shuffle(item.branches, rng, shuffleLimit)
+        const lastBranch = last(item.branches);
+        if (!lastBranch) {
+            throw new Error(`suite ${suite.level} has an empty question ${item.serial}.`)
+        }
+        const shouldLastBranchRemainInPlace = shouldRemainInPlace(lastBranch);
+        shuffle(item.branches, rng);
+        if (shouldLastBranchRemainInPlace) {
+            item.branches = item.branches.filter(branch => branch !== lastBranch);
+            item.branches.push(lastBranch);
+        }
         item.correctBranchIndex = item.branches.indexOf(correctBranchBody)
     }
 }
