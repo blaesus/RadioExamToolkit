@@ -179,26 +179,27 @@ function shuffle<T>(array: T[], rng: () => number): void {
     }
 }
 
-function last<T>(array: T[]): T | undefined {
-    return array[array.length - 1];
-}
-
-function shouldRemainInPlace(branch?: string): boolean {
-    return !!branch && branch.startsWith(`All`)
+// A branch that include all other branches
+function isBranchCatchAll(branch?: string): boolean {
+    return !!branch &&
+           (
+               branch === `All these choices are correct`
+               || branch === `All of these choices are correct`
+               || branch === `三项都可能`
+               || branch === `以上三项全部正确`
+               || branch === `其他三项全部正确`
+           );
 }
 
 function shuffleBranches(suite: Suite, rng: () => number): void {
     for (const item of suite.items) {
         const correctBranchBody = item.branches[item.correctBranchIndex];
-        const lastBranch = last(item.branches);
-        if (!lastBranch) {
-            throw new Error(`suite ${suite.level} has an empty question ${item.serial}.`)
-        }
-        const shouldLastBranchRemainInPlace = shouldRemainInPlace(lastBranch);
+        const catchAll: string | undefined = item.branches.filter(isBranchCatchAll)[0];
         shuffle(item.branches, rng);
-        if (shouldLastBranchRemainInPlace) {
-            item.branches = item.branches.filter(branch => branch !== lastBranch);
-            item.branches.push(lastBranch);
+        if (catchAll) {
+            item.branches = item.branches.filter(branch => branch !== catchAll);
+            item.branches.push(catchAll);
+            // We only handle one catch-all branch
         }
         item.correctBranchIndex = item.branches.indexOf(correctBranchBody)
     }
