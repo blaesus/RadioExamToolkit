@@ -23,6 +23,7 @@ interface Item {
 
 interface Suite {
     level: string,
+    region: string,
     version: string,
     randomSeed: number,
     items: Item[],
@@ -267,9 +268,14 @@ function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null =
         return `<img src='${pictureFilename}'/>`
     }
 
+    function getCardId(serial: string): string {
+        return [serial, suite.level, suite.region, suite.version].join("-");
+    }
+
     const lines = [];
     for (const item of suite.items) {
         const segments = [
+            getCardId(item.serial),
             item.serial,
             item.question,
             optionIndexLetter(item.correctBranchIndex),
@@ -305,6 +311,7 @@ function transform(sourceInfo: SourceFileInfo): void {
     const seed = level.charCodeAt(0) + SEED_DELTA;
     const suite: Suite = {
         level,
+        region: sourceInfo.regionRoot,
         version: sourceInfo.version,
         randomSeed: seed,
         items: parse(fileContent, regionRoot),
