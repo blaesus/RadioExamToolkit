@@ -71,12 +71,55 @@ function getDefaultItem(): Item {
 }
 
 function parse(content: string, region: SourceFileInfo['regionRoot']): Item[] {
-    if (region === "cn") {
-        return parseCn(content);
+    switch (region) {
+        case "cn": {
+            return parseCn(content);
+        }
+        case "us": {
+            return parseUs(content);
+        }
+        case "tw": {
+            return parseTw(content);
+        }
+        default: {
+            throw new Error(`Missing parser for ${region}`);
+        }
+
     }
-    else {
-        return parseUs(content);
+}
+
+function parseTw(content: string): Item[] {
+    const lines = content.split("\n").map(s => s.trim());
+    const items: Item[] = [];
+    let item = getDefaultItem();
+    for (const line of lines) {
+        const regexTitle = /^[（(]\s?([0-9])\s?[）)]\s([0-9]*)\.\s(.*)/;
+        const match = regexTitle.exec(line);
+        if (match) {
+            if (item.question) {
+                items.push(item);
+                item = getDefaultItem();
+            }
+            item.correctBranchIndex = +match[1] - 1;
+            item.serial = match[2];
+            item.question = match[3];
+
+            const pictureRegex = /圖\s?([A-Z][0-9]?-[0-9])/;
+            const pictureMatch = pictureRegex.exec(line);
+            if (pictureMatch) {
+                item.picture = pictureMatch[1];
+            }
+        }
+        else {
+            const branchRegex = /^[（(][0-9][)）]\s(.*)/;
+            const match = branchRegex.exec(line);
+            if (match) {
+                item.branches.push(match[1]);
+            }
+        }
+
     }
+    return items;
 }
 
 function parseUs(content: string): Item[] {
@@ -205,20 +248,23 @@ function shuffleBranches(suite: Suite, rng: () => number): void {
     }
 }
 
-function toCsv(suite: Suite, pictureExt: string | null): string {
+function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null = null): string {
 
     function optionIndexLetter(index: number): string {
         return String.fromCharCode('A'.charCodeAt(0) + index)
     }
 
-    function getPictureField(picturePath?: string, ext: string | null = null): string {
-        if (!picturePath) {
+    function getPictureField(pictureFilename?: string, prefix?: string, suffix: string | null = null): string {
+        if (!pictureFilename) {
             return "";
         }
-        if (ext) {
-            picturePath = picturePath + "." + ext;
+        if (prefix) {
+            pictureFilename = prefix + pictureFilename;
         }
-        return `<img src='${picturePath}'/>`
+        if (suffix) {
+            pictureFilename = pictureFilename + suffix;
+        }
+        return `<img src='${pictureFilename}'/>`
     }
 
     const lines = [];
@@ -227,7 +273,7 @@ function toCsv(suite: Suite, pictureExt: string | null): string {
             item.serial,
             item.question,
             optionIndexLetter(item.correctBranchIndex),
-            getPictureField(item.picture, pictureExt),
+            getPictureField(item.picture, picturePrefix, pictureExt),
             item.reference,
             ...item.branches,
         ]
@@ -274,7 +320,7 @@ function transform(sourceInfo: SourceFileInfo): void {
     const csvPath = join(sourceRoot, regionRoot, generatedFileSubpath, outputBasename + '.csv');
     const prng = getPrng(suite.randomSeed);
     shuffleBranches(suite, () => prng.get());
-    const csvContent = toCsv(suite, sourceInfo.pictureExt);
+    const csvContent = toCsv(suite, sourceInfo.picturePrefix, sourceInfo.pictureSuffix);
     console.info(`Exporting CSV to ${csvPath}`)
     writeFileSync(csvPath, csvContent);
 
