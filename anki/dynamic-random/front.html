@@ -1,0 +1,141 @@
+<div class="question">
+    <div> {{question}} </div>
+    <div> {{picture}} </div>
+</div>
+
+<hr />
+
+<div class="branches">
+    <div class="branch"></div>
+    <div class="branch"></div>
+    <div class="branch"></div>
+    <div class="branch"></div>
+</div>
+
+<div class="support">
+    <span class="serial">{{serial}}</span>
+    <span class="reference">{{reference}}</span>
+</div>
+
+<div class="back-only hidden">
+    <hr id=answer>
+    <div class="correct-branch-marker">{{correctBranch}}</div>
+</div>
+
+<script>qFade=0; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
+
+<script>
+    var DAYS_SINCE_EPOCH = Math.floor(Date.now() / 1000 / 3600 / 24);
+    var MAGIC_PRIME = 1021;
+    var A_CHARCODE = "A".charCodeAt(0);
+
+    render();
+
+    function numerizeString(s) {
+        var branchNumber = s.split("")
+                            .map(function(c) {return c.charCodeAt(0)})
+                            .filter(Boolean)
+                            .reduce(function (n, product) {
+                                return product * n;
+                            })
+        return branchNumber * DAYS_SINCE_EPOCH % MAGIC_PRIME;
+    }
+
+    function isBranchCatchAll(branch) {
+        return branch === "All these choices are correct"
+               || branch === "All of these choices are correct"
+               || branch === "三项都可能"
+               || branch === "以上三项全部正确"
+               || branch === "其他三项全部正确"
+    }
+
+    function handleCatchAll(branches) {
+        var catchAll = branches.filter(isBranchCatchAll)[0];
+        if (catchAll) {
+            for (var i = 0; i < branches.length; i += 1) {
+                if (branches[i] === catchAll) {
+                    var temp = branches[i];
+                    branches[i] = branches[branches.length - 1];
+                    branches[branches.length - 1] = temp;
+                }
+            }
+            branches.push(catchAll);
+        }
+    }
+
+    function randomizeBranches(branches) {
+        branches.sort(function (s1, s2) {
+            return numerizeString(s1) - numerizeString(s2)
+        })
+        handleCatchAll(branches)
+    }
+
+    function getBranchDoms() {
+        return Array.prototype.slice.call(document.querySelectorAll(".branch"));
+    }
+
+    function updateBranchDoms(branches) {
+        var branchDoms = getBranchDoms();
+
+        for (var i = 0; i < branchDoms.length; i += 1) {
+            var targetDom = branchDoms[i];
+            var content = branches[i];
+            targetDom.innerHTML = content;
+        }
+    }
+
+    function renderBack(branches, originalCorrectBranchContent) {
+        highlightCorrectBranch()
+        updateCorrectBranchMarker()
+        showBackOnlyInformation();
+
+        function highlightCorrectBranch() {
+            var branchDoms = getBranchDoms();
+            for (var i = 0; i < branchDoms.length; i += 1) {
+                var targetDom = branchDoms[i];
+                if (targetDom.innerHTML === originalCorrectBranchContent) {
+                    targetDom.classList.add("correct");
+                }
+            }
+        }
+
+
+        function updateCorrectBranchMarker() {
+            var correctDom = document.querySelector(".correct-branch-marker");
+            if (correctDom) {
+                var currentCorrentBranchIndex = branches.indexOf(originalCorrectBranchContent);
+                var currentCorrectBranchLetter = String.fromCharCode(A_CHARCODE + currentCorrentBranchIndex);
+                correctDom.innerHTML = currentCorrectBranchLetter
+            }
+        }
+
+
+        function showBackOnlyInformation() {
+            var backOnlyDom = document.querySelector(".back-only");
+            backOnlyDom.classList.remove("hidden");
+        }
+    }
+
+    function render() {
+        var branches = [
+            "{{branchA}}",
+            "{{branchB}}",
+            "{{branchC}}",
+            "{{branchD}}",
+        ]
+        var originalCorrectBranch = "{{correctBranch}}";
+        var originalCorrectBranchIndex = originalCorrectBranch.charCodeAt(0) - A_CHARCODE;
+        var originalCorrectBranchContent = branches[originalCorrectBranchIndex];
+
+        randomizeBranches(branches)
+
+        updateBranchDoms(branches)
+
+        var isOnBack = !!document.querySelector(".back");
+        if (isOnBack) {
+            renderBack(branches, originalCorrectBranchContent)
+        }
+    }
+
+</script>
+

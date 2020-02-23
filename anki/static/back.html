@@ -1,0 +1,24 @@
+<div class="back">
+    <div>
+        {{FrontSide}}
+    </div>
+
+    <hr id=answer>
+    <div id=a></div>
+
+    <div class="correct-branch-marker">{{correctBranch}}</div>
+</div>
+
+<script>
+    var correctClassName = "correct";
+
+    function fallback() {
+        var selector = '.branch' + '.{{correctBranch}}';
+        var correctBranchDom = document.querySelector(selector);
+        if (correctBranchDom) {
+            correctBranchDom.classList.add(correctClassName);
+        }
+    }
+
+    fallback()
+</script>
