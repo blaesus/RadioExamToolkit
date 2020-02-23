@@ -1,6 +1,6 @@
-# Amateur Radio Exam Question Pool Toolkit (CN+US)
+# Amateur Radio Exam Question Pool Toolkit
 
-Parse radio exam question pools of China and the United States and generate JSON and CSVs for Anki import or other programmatic uses.
+Parse radio exam question pools of several jurisdictions and generate JSON and CSVs for Anki import or other programmatic uses.
 
 ## 1. 中国业余无线电台操作证书考试题库
 
@@ -18,6 +18,10 @@ Three levels are covered:
 - Amateur Extra (i.e. element 4), version July 2020-2024.
 
 Minor changes are made to the text to make parsing successful. Premables were removed and tildes that should follow every question are added if missing. Questions and branches are not touched, obviously. 
+
+## 3. 臺灣業餘無線電人員資格測試
+
+使用[108年版](https://www.ncc.gov.tw/chinese/news_detail.aspx?site_content_sn=649&sn_f=41699)。一二三等題目皆已收錄。
 
 ## Development
 ```bash
