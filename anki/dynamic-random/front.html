@@ -1,4 +1,4 @@
-<div class="question">
+ <div class="question">
     <div> {{question}} </div>
     <div> {{picture}} </div>
 </div>
@@ -21,6 +21,14 @@
     <hr id=answer>
     <div class="correct-branch-marker">{{correctBranch}}</div>
 </div>
+
+<div id="data" style="display: none">
+    <div class="A">{{branchA}}</div>
+    <div class="B">{{branchB}}</div>
+    <div class="C">{{branchC}}</div>
+    <div class="D">{{branchD}}</div>
+</div>
+
 
 <script>qFade=0; if (typeof anki !== 'undefined') anki.qFade=qFade;</script>
 
@@ -118,11 +126,11 @@
 
     function render() {
         var branches = [
-            "{{branchA}}",
-            "{{branchB}}",
-            "{{branchC}}",
-            "{{branchD}}",
-        ]
+            document.querySelector("#data .A").innerHTML,
+            document.querySelector("#data .B").innerHTML,
+            document.querySelector("#data .C").innerHTML,
+            document.querySelector("#data .D").innerHTML,
+        ];
         var originalCorrectBranch = "{{correctBranch}}";
         var originalCorrectBranchIndex = originalCorrectBranch.charCodeAt(0) - A_CHARCODE;
         var originalCorrectBranchContent = branches[originalCorrectBranchIndex];
