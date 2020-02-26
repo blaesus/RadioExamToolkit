@@ -11,6 +11,10 @@
   "dependencies": {
     "@types/iconv-lite": "0.0.1",
     "@types/node": "^13.7.0",
+    "colors": "^1.4.0",
     "iconv-lite": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/colors": "^1.2.1"
   }
 }

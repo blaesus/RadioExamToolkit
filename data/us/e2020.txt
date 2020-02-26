@@ -798,8 +798,8 @@ A. Transmitting on channels shared with cable TV
 B. Using converted satellite TV dishes
 C. Transmitting on the abandoned TV channel 2
 D. Using USB and demodulating the signal with a computer sound card
-
 ~~
+
 E2B09 (D)
 What hardware, other than a receiver with SSB capability and a suitable computer, is needed to decode SSTV using Digital Radio Mondiale (DRM)?
 A. A special IF converter

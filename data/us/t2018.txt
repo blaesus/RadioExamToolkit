@@ -692,7 +692,6 @@ FCC Exam Element 2 Question Pool for Technician Class
  B. The repeater may require a proper CTCSS tone from your transceiver
  C. The repeater may require a proper DCS tone from your transceiver
  D. All of these choices are correct
-
  ~~
 
  T2B05 (C)
@@ -1234,7 +1233,6 @@ FCC Exam Element 2 Question Pool for Technician Class
  B. Round copper-clad steel wire
  C. Twisted-pair cable
  D. Flat strap
-
  ~~
 
  T4A09 (D)

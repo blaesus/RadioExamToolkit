@@ -1,6 +1,8 @@
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
 import { decode } from "iconv-lite";
+import * as colors from "colors/safe";
+
 import { SourceFileInfo, sourceFileInfoList } from "./data/meta";
 
 const sourceRoot = `data`;
@@ -11,6 +13,7 @@ const SEED_DELTA = 0;
 const CSV_DELIMITER = '|';
 const CSV_NEWLINE = '\n';
 
+const SANE_BRANCH_COUNT = 4;
 
 interface Item {
     serial: string,
@@ -21,12 +24,18 @@ interface Item {
     picture?: string,
 }
 
+interface Section {
+    label: string,
+    description: string,
+    items: Item[],
+}
+
 interface Suite {
     level: string,
     region: string,
     version: string,
     randomSeed: number,
-    items: Item[],
+    sections: Section[],
 }
 
 interface RandomGenerator {
@@ -60,6 +69,14 @@ function loadSource(sourceInfo: SourceFileInfo): string {
     return unifiedText;
 }
 
+function warn(s: string): void {
+    console.warn(colors.yellow(s));
+}
+
+function inform(s: string): void {
+    console.info(colors.green(s));
+}
+
 function getDefaultItem(): Item {
     return {
         serial: '',
@@ -71,7 +88,15 @@ function getDefaultItem(): Item {
     }
 }
 
-function parse(content: string, region: SourceFileInfo['regionRoot']): Item[] {
+function getDefaultSection(): Section {
+    return {
+        label: "",
+        description: "",
+        items: [],
+    }
+}
+
+function parse(content: string, region: SourceFileInfo['regionRoot']): Section[] {
     switch (region) {
         case "cn": {
             return parseCn(content);
@@ -89,21 +114,36 @@ function parse(content: string, region: SourceFileInfo['regionRoot']): Item[] {
     }
 }
 
-function parseTw(content: string): Item[] {
+function parseTw(content: string): Section[] {
     const lines = content.split("\n").map(s => s.trim());
-    const items: Item[] = [];
+    const sections: Section[] = [];
+    let section = getDefaultSection();
     let item = getDefaultItem();
     for (const line of lines) {
+        const sectionRegex = /^(.*)題庫/;
+        const sectionMatch = sectionRegex.exec(line);
+        if (sectionMatch) {
+            if (section.label) {
+                if (item.question) {
+                    section.items.push(item);
+                    item = getDefaultItem();
+                }
+                sections.push(section);
+                section = getDefaultSection();
+            }
+            section.label = sectionMatch[1];
+        }
+
         const regexTitle = /^[（(]\s?([0-9])\s?[）)]\s([0-9]*)\.\s(.*)/;
-        const match = regexTitle.exec(line);
-        if (match) {
+        const titleMatch = regexTitle.exec(line);
+        if (titleMatch) {
             if (item.question) {
-                items.push(item);
+                section.items.push(item);
                 item = getDefaultItem();
             }
-            item.correctBranchIndex = +match[1] - 1;
-            item.serial = match[2];
-            item.question = match[3];
+            item.correctBranchIndex = +titleMatch[1] - 1;
+            item.serial = titleMatch[2];
+            item.question = titleMatch[3];
 
             const pictureRegex = /圖\s?([A-Z][0-9]?-[0-9])/;
             const pictureMatch = pictureRegex.exec(line);
@@ -112,42 +152,57 @@ function parseTw(content: string): Item[] {
             }
         }
         else {
-            const branchRegex = /^[（(][0-9][)）]\s(.*)/;
+            const branchRegex = /^[（(][0-9][)）]\s?(.*)/;
             const match = branchRegex.exec(line);
             if (match) {
                 item.branches.push(match[1]);
             }
         }
-
     }
-    return items;
+    sections.push(section);
+    return sections;
 }
 
-function parseUs(content: string): Item[] {
+function parseUs(content: string): Section[] {
     const lines = content.split("\n").map(s => s.trim());
-    const items: Item[] = [];
+    const sections: Section[] = [];
+    let section = getDefaultSection();
     let item = getDefaultItem();
-    let parseMode = false;
+    let parseBranch = false;
     for (const line of lines) {
+        const sectionRegex = /^([TGE][0-9][A-Z])\s[–-]?\s?(.*)/;
+        const sectionMatch = sectionRegex.exec(line);
+        if (sectionMatch) {
+            if (section.label) {
+                if (item.question) {
+                    section.items.push(item);
+                    item = getDefaultItem();
+                }
+                sections.push(section);
+                section = getDefaultSection();
+            }
+            section.label = sectionMatch[1];
+            section.description = sectionMatch[2];
+        }
         if (line.startsWith('~')) {
-            parseMode = false;
-            items.push(item);
+            parseBranch = false;
+            section.items.push(item);
             item = getDefaultItem();
         }
         else {
             const titleRegex = /^(\w+)\s\((\w)\)(\s\[(.+)\])?/;
             const match = titleRegex.exec(line);
             if (match) {
-                if (parseMode) {
-                    console.warn("Unexpected new title while parsing of an existing is ongoing. Missing tilde?");
-                    console.warn("Current item:\n", JSON.stringify(item, null, 4));
+                if (parseBranch) {
+                    warn("Unexpected new title while parsing of an existing is ongoing. Missing tilde?");
+                    warn("Current item:\n" + JSON.stringify(item, null, 4));
                 }
-                parseMode = true;
+                parseBranch = true;
                 item.serial = match[1];
                 item.correctBranchIndex = match[2].charCodeAt(0) - "A".charCodeAt(0);
                 item.reference = match[4];
             }
-            else if (parseMode) {
+            else if (parseBranch) {
                 const branchRegex = /^([ABCD]\.)\s(.*)/;
                 const match = branchRegex.exec(line);
                 if (match) {
@@ -164,10 +219,11 @@ function parseUs(content: string): Item[] {
             }
         }
     }
-    return items;
+    sections.push(section);
+    return sections;
 }
 
-function parseCn(content: string): Item[] {
+function parseCn(content: string): Section[] {
     const lines = content.split("\n");
 
     const items: Item[] = [];
@@ -204,10 +260,15 @@ function parseCn(content: string): Item[] {
                 item.branches.push(body);
             }
         }
-
     }
 
-    return items
+    // Chinese pool is not sectioned
+    const section: Section = {
+        label: "Sole",
+        description: "",
+        items,
+    }
+    return [section];
 }
 
 function shuffle<T>(array: T[], rng: () => number): void {
@@ -236,16 +297,18 @@ function isBranchCatchAll(branch?: string): boolean {
 }
 
 function shuffleBranches(suite: Suite, rng: () => number): void {
-    for (const item of suite.items) {
-        const correctBranchBody = item.branches[item.correctBranchIndex];
-        const catchAll: string | undefined = item.branches.filter(isBranchCatchAll)[0];
-        shuffle(item.branches, rng);
-        if (catchAll) {
-            item.branches = item.branches.filter(branch => branch !== catchAll);
-            item.branches.push(catchAll);
-            // We only handle one catch-all branch
+    for (const section of suite.sections) {
+        for (const item of section.items) {
+            const correctBranchBody = item.branches[item.correctBranchIndex];
+            const catchAll: string | undefined = item.branches.filter(isBranchCatchAll)[0];
+            shuffle(item.branches, rng);
+            if (catchAll) {
+                item.branches = item.branches.filter(branch => branch !== catchAll);
+                item.branches.push(catchAll);
+                // We only handle one catch-all branch
+            }
+            item.correctBranchIndex = item.branches.indexOf(correctBranchBody)
         }
-        item.correctBranchIndex = item.branches.indexOf(correctBranchBody)
     }
 }
 
@@ -273,19 +336,21 @@ function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null =
     }
 
     const lines = [];
-    for (const item of suite.items) {
-        const segments = [
-            getCardId(item.serial),
-            item.serial,
-            item.question,
-            optionIndexLetter(item.correctBranchIndex),
-            getPictureField(item.picture, picturePrefix, pictureExt),
-            item.reference,
-            ...item.branches,
-        ]
-        lines.push(
-            segments.join(CSV_DELIMITER)
-        )
+    for (const section of suite.sections) {
+        for (const item of section.items) {
+            const segments = [
+                getCardId(item.serial),
+                item.serial,
+                item.question,
+                optionIndexLetter(item.correctBranchIndex),
+                getPictureField(item.picture, picturePrefix, pictureExt),
+                item.reference,
+                ...item.branches,
+            ]
+            lines.push(
+                segments.join(CSV_DELIMITER)
+            )
+        }
     }
     return lines.join(CSV_NEWLINE);
 
@@ -293,15 +358,94 @@ function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null =
 
 // For example, as of Feb 2020, LK0938 has an image but the `[P]` field is empty
 function fixMissingPictureLabels(suite: Suite): void {
-    for (const item of suite.items) {
-        if (!item.picture) {
-            const possiblePath = `${sourceRoot}/cn/images/${item.serial}.jpg`
-            if (existsSync(possiblePath)) {
-                item.picture = `${item.serial}.jpg`
-                console.warn(`Fixing item ${item.serial} missing link to picture`)
+    for (const section of suite.sections) {
+        for (const item of section.items) {
+            if (!item.picture) {
+                const possiblePath = `${sourceRoot}/cn/images/${item.serial}.jpg`
+                if (existsSync(possiblePath)) {
+                    item.picture = `${item.serial}.jpg`
+                    console.info(`Fixing item ${item.serial} missing link to picture`)
+                }
             }
         }
     }
+}
+
+function reportItemSanity(item: Item): boolean {
+    let sane = true;
+    if (!item.question) {
+        sane = false;
+        warn(`Item ${item.serial} has empty question`);
+    }
+    if (!item.branches.length) {
+        sane = false;
+        warn(`Item ${item.serial} has no branches`);
+    }
+    if (item.branches.length !== SANE_BRANCH_COUNT) {
+        sane = false;
+        warn(`Item ${item.serial} has unexpected branch count: ${item.branches.length}`);
+    }
+    else {
+        for (const branch of item.branches) {
+            if (!branch) {
+                sane = false;
+                warn(`Item ${item.serial} has empty branch`);
+            }
+        }
+        if (!item.branches[item.correctBranchIndex]) {
+            sane = false;
+            console.info(item.branches, item.correctBranchIndex)
+            warn(`Item ${item.serial} has abnormal correct branch index ${item.correctBranchIndex}`);
+        }
+    }
+    return sane;
+}
+
+function reportSuiteSanity(suite: Suite): boolean {
+    let sane = true;
+    if (!suite.version) {
+        sane = false;
+        warn(`Suite ${suite.level}: Missing version`);
+    }
+    if (!suite.region) {
+        sane = false;
+        warn(`Suite ${suite.level}: Missing region`);
+    }
+    if (!suite.level) {
+        sane = false;
+        warn(`Suite ${suite.level}: Missing level`);
+    }
+    if (!suite.sections.length) {
+        sane = false;
+        warn(`Suite ${suite.level}: No sections`);
+    }
+    else {
+        for (const section of suite.sections) {
+            const itemSerials = section.items.map(item => item.serial);
+            for (let index = 0; index < itemSerials.length; index += 1) {
+                const serial = itemSerials[index];
+                if (itemSerials.indexOf(serial) !== index) {
+                    sane = false;
+                    warn(`Duplicated item serial ${serial} in section ${section.label}`)
+                }
+            }
+            for (const item of section.items) {
+                let itemSane = reportItemSanity(item);
+                if (!itemSane) {
+                    sane = false;
+                }
+            }
+        }
+    }
+
+    if (!sane) {
+        warn(`Suite ${suite.level} has abnormal structure!`);
+    }
+    else {
+        inform(`Suite ${suite.level} is normal.`);
+    }
+
+    return sane;
 }
 
 function transform(sourceInfo: SourceFileInfo): void {
@@ -314,9 +458,13 @@ function transform(sourceInfo: SourceFileInfo): void {
         region: sourceInfo.regionRoot,
         version: sourceInfo.version,
         randomSeed: seed,
-        items: parse(fileContent, regionRoot),
+        sections: parse(fileContent, regionRoot),
     };
     fixMissingPictureLabels(suite);
+
+    reportSuiteSanity(suite);
+    const totalItems = suite.sections.map(section => section.items.length).reduce((n, sum) => n + sum);
+    console.info(`Collected ${totalItems} items in ${suite.sections.length} sections`)
 
     const outputBasename = `${regionRoot.toUpperCase()}-${level}-${version}`
 
