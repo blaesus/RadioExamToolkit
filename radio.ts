@@ -1,7 +1,9 @@
+import * as crypto from "crypto";
 import { readFileSync, writeFileSync, existsSync } from "fs";
 import { join } from "path";
 import { decode } from "iconv-lite";
 import * as colors from "colors/safe";
+
 
 import { SourceFileInfo, sourceFileInfoList } from "./data/meta";
 
@@ -314,6 +316,15 @@ function shuffleBranches(suite: Suite, rng: () => number): void {
 
 function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null = null): string {
 
+    function sha256(content: string): string {
+        return crypto.createHash("sha256").update(content).digest().toString("hex");
+    }
+
+    function hashItem(item: Item): string {
+        const content = item.question + item.branches.map(s => s).sort().join();
+        return sha256(content).slice(0, 12);
+    }
+
     function optionIndexLetter(index: number): string {
         return String.fromCharCode('A'.charCodeAt(0) + index)
     }
@@ -331,16 +342,12 @@ function toCsv(suite: Suite, picturePrefix?: string, pictureExt: string | null =
         return `<img src='${pictureFilename}'/>`
     }
 
-    function getCardId(serial: string): string {
-        return [serial, suite.level, suite.region, suite.version].join("-");
-    }
-
     const lines = [];
     for (const section of suite.sections) {
         for (const item of section.items) {
             const segments = [
-                getCardId(item.serial),
                 item.serial,
+                hashItem(item),
                 item.question,
                 optionIndexLetter(item.correctBranchIndex),
                 getPictureField(item.picture, picturePrefix, pictureExt),
